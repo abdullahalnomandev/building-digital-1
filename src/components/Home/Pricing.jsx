@@ -1,7 +1,7 @@
 import React from "react";
 import PricingCard from "../UI/PricingCard";
 
-const Pricing = () => {
+export const Pricing = () => {
   const priceInfo = [
     {
       id: 1,

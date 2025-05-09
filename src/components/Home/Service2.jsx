@@ -1,4 +1,5 @@
 import React from "react";
+import ServiceCard from "../UI/ServiceCard";
 
 const Service2 = () => {
   const serviceInfo = [
@@ -101,11 +102,11 @@ const Service2 = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2  space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
+        <div className="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
           {serviceInfo.map(({ id, icon, title, description }) => (
-            <Service2
-              id={id}
+            <ServiceCard
               icon={icon}
+              key={id}
               title={title}
               description={description}
             />

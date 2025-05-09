@@ -1,5 +1,3 @@
-import React from "react";
-
 const PricingCard = ({ priceCategory, description, amount, list }) => {
   return (
     <div className="flex flex-col max-w-lg p-8 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow-lg dark:border-gray-600 dark:bg-gray-800 dark:text-white">
@@ -13,8 +11,8 @@ const PricingCard = ({ priceCategory, description, amount, list }) => {
       </div>
 
       <ul role="list" className="mb-8 space-y-4 text-left">
-        {list.map((li) => (
-          <li className="flex items-center space-x-3">
+        {list.map((li, i) => (
+          <li className="flex items-center space-x-3" key={i}>
             <svg
               className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
               fill="currentColor"
